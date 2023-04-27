@@ -1,6 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/hero.svg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
@@ -21,33 +21,28 @@ import { Icon } from "astro-icon";
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Unleashing the Potential of AI with Unravel AI.    
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+      Discover the power of AI and its capabilities to revolutionize the way you do business. <wbr />Our cutting-edge solutions are designed to deliver results, streamline operations, and drive innovation, ensuring your business stays competitive in the digital age.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
+        href="/contact"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
+        <Icon class="text-white w-5 h-5" name="bx:bxs-contact" />
+        Contact Us
       </Link>
       <Link
         size="lg"
         style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
+        href="/about"
         class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
+        >
+        <Icon class="text-black w-4 h-4" name="bx:bxs-book-content" />
+        Read More
       </Link>
     </div>
   </div>
