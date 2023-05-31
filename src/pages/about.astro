@@ -4,6 +4,7 @@ import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import ai from '@assets/aboutus.svg'
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -11,52 +12,44 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-<Layout title="About">
+<Layout title="About Unravel AI">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
+      <Fragment slot="title">About Unravel AI</Fragment>
+      <Fragment slot="desc">
+        We are an AI startup dedicated to building a better world with cutting-edge technology.
+      </Fragment>
     </Sectionhead>
 
+    <div class="flex  mt-10 flex-row justify-center items-center">
+      <Picture
+        src={ai}
+        alt="Coder"
+        widths={[400, 800, 1200]}
+        aspectRatio="5:3"
+        sizes="(max-width: 800px) 100vw, 620px"
+        loading="eager"
+      />
+      </div>
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Building a better world
-      </h2>
+      <h2 class="font-bold text-3xl text-gray-800">Building a better world</h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        With a focus on user-friendly design and robust technology, we strive to deliver high-quality products that exceed our clients’ expectations. Whether you’re a small business owner looking to streamline your processes or a large corporation seeking a customized software solution, we have the expertise and experience to help.      </p>
+        With a focus on user-friendly design and robust technology, we strive to
+        deliver high-quality AI products that exceed our clients' expectations.
+        Whether you're a small business owner looking to streamline your
+        processes or a large corporation seeking a customized AI solution,
+        we have the expertise and experience to help.
+      </p>
       <p class="text-lg leading-relaxed text-slate-500">
-        Our passion for technology and dedication to our clients sets us apart in the industry. We believe in building long-term relationships with our clients, and we work closely with them to understand their unique needs and challenges. This collaborative approach allows us to deliver personalized solutions that are tailored to their specific goals and objectives.
+        Our passion for AI and dedication to our clients sets us apart
+        in the industry. We believe in building long-term relationships with our
+        clients and working closely with them to understand their unique needs
+        and challenges. This collaborative approach allows us to deliver
+        personalized AI solutions that are tailored to their specific goals
+        and objectives.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
-      {
-        publishedTeamMembers.map((teamMemberEntry) => (
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Picture
-                src={teamMemberEntry.data.avatar.src}
-                alt={teamMemberEntry.data.avatar.alt}
-                sizes="(max-width: 800px) 100vw, 400px"
-                widths={[200, 400]}
-                aspectRatio="1:1"
-                background="#ffffff"
-                fit="cover"
-                position="center"
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
-              />
-            </div>
-
-            <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">
-                {teamMemberEntry.data.name}
-              </h2>
-              <h3 class="text-sm text-slate-500">
-                {teamMemberEntry.data.title}
-              </h3>
-            </div>
-          </div>
-        ))
-      }
-    </div>
+  
   </Container>
 </Layout>
+
