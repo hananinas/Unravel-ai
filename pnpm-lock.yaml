@@ -29,9 +29,6 @@ dependencies:
   '@types/react-dom':
     specifier: ^18.2.4
     version: 18.2.4
-  '@vercel/analytics':
-    specifier: ^1.0.1
-    version: 1.0.1
   astro:
     specifier: ^2.5.6
     version: 2.5.6(sharp@0.31.3)
@@ -992,10 +989,6 @@ packages:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: false
 
-  /@vercel/analytics@1.0.1:
-    resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
-    dev: false
-
   /@vscode/emmet-helper@2.8.8:
     resolution: {integrity: sha512-QuD4CmNeXSFxuP8VZwI6qL+8vmmd7JcSdwsEIdsrzb4YumWs/+4rXRX9MM+NsFfUO69g6ezngCD7XRd6jY9TQw==}
     dependencies:
@@ -1289,7 +1282,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001492
-      electron-to-chromium: 1.4.414
+      electron-to-chromium: 1.4.415
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.7)
     dev: false
@@ -1668,8 +1661,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: false
 
-  /electron-to-chromium@1.4.414:
-    resolution: {integrity: sha512-RRuCvP6ekngVh2SAJaOKT/hxqc9JAsK+Pe0hP5tGQIfonU2Zy9gMGdJ+mBdyl/vNucMG6gkXYtuM4H/1giws5w==}
+  /electron-to-chromium@1.4.415:
+    resolution: {integrity: sha512-3meOxxvyUOJVwa7cem6O2/MRPZ+FTzblSPSpG7biZoF9yOVrhCaS2l9C4jjW6YTm8uuEpmApuP0xQJSmUglfdg==}
     dev: false
 
   /emmet@2.4.4:
@@ -3103,8 +3096,8 @@ packages:
       '@types/nlcst': 1.0.0
     dev: false
 
-  /node-abi@3.42.0:
-    resolution: {integrity: sha512-eVNy8tM0/RgInLV3R2xF5nGOAfa85lx0D+o4gL1bkR82sPhr6RDAPajtkigExPtUg3SpcHRvLFNxpr3m0Fjz2w==}
+  /node-abi@3.43.0:
+    resolution: {integrity: sha512-QB0MMv+tn9Ur2DtJrc8y09n0n6sw88CyDniWSX2cHW10goQXYPK9ZpFJOktDS4ron501edPX6h9i7Pg+RnH5nQ==}
     engines: {node: '>=10'}
     dependencies:
       semver: 7.5.1
@@ -3419,7 +3412,7 @@ packages:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.42.0
+      node-abi: 3.43.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1

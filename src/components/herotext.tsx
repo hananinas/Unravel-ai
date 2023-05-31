@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import { useAnalytics } from '@vercel/analytics';
 
 const Hero: React.FC = () => {
   const variants = {
@@ -9,7 +8,6 @@ const Hero: React.FC = () => {
     visible: { x: 0, opacity: 1 }
   };
 
-  useAnalytics();
 
 
   return (
