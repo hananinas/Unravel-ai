@@ -4,8 +4,8 @@ title: "The Power of Artificial Intelligence in Modern Society"
 snippet: "Discover how artificial intelligence is transforming various aspects of our lives and shaping the future of technology."
 image:
   {
-  src: "https://images.unsplash.com/photo-1679083216051-aa510a1a2c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3B0fGVufDB8fDB8fHww&w=1000&q=80",
-  alt: "artificial intelligence"
+    src: "https://images.unsplash.com/photo-1679083216051-aa510a1a2c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3B0fGVufDB8fDB8fHww&w=1000&q=80",
+    alt: "artificial intelligence",
   }
 publishDate: "2023-05-31 09:00"
 category: "Technology"
@@ -19,6 +19,7 @@ In recent years, artificial intelligence (AI) has emerged as a powerful and tran
 AI in Everyday Life
 
 Artificial intelligence has already made its way into various aspects of our lives, often without us realizing it. From voice assistants like Siri and Alexa to personalized recommendations on streaming platforms, AI algorithms are working behind the scenes to enhance our experiences. Here are some key areas where AI is making a significant impact:
+
 1. Healthcare
 
 AI has the potential to revolutionize healthcare by improving diagnostics, treatment plans, and patient care. Machine learning algorithms can analyze vast amounts of medical data, such as patient records and medical images, to identify patterns and make accurate predictions. This can help doctors in diagnosing diseases earlier and suggesting personalized treatment options.

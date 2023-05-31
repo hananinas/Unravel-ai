@@ -4,7 +4,7 @@ import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import ai from '@assets/aboutus.svg'
+import ai from "@assets/aboutus.svg";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -17,11 +17,12 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     <Sectionhead>
       <Fragment slot="title">About Unravel AI</Fragment>
       <Fragment slot="desc">
-        We are an AI startup dedicated to building a better world with cutting-edge technology.
+        We are an AI startup dedicated to building a better world with
+        cutting-edge technology.
       </Fragment>
     </Sectionhead>
 
-    <div class="flex  mt-10 flex-row justify-center items-center">
+    <div class="flex mt-10 flex-row justify-center items-center">
       <img src={ai} alt="About Us" />
     </div>
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
@@ -30,18 +31,17 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         With a focus on user-friendly design and robust technology, we strive to
         deliver high-quality AI products that exceed our clients' expectations.
         Whether you're a small business owner looking to streamline your
-        processes or a large corporation seeking a customized AI solution,
-        we have the expertise and experience to help.
+        processes or a large corporation seeking a customized AI solution, we
+        have the expertise and experience to help.
       </p>
       <p class="text-lg leading-relaxed text-slate-500">
-        Our passion for AI and dedication to our clients sets us apart
-        in the industry. We believe in building long-term relationships with our
+        Our passion for AI and dedication to our clients sets us apart in the
+        industry. We believe in building long-term relationships with our
         clients and working closely with them to understand their unique needs
         and challenges. This collaborative approach allows us to deliver
-        personalized AI solutions that are tailored to their specific goals
-        and objectives.
+        personalized AI solutions that are tailored to their specific goals and
+        objectives.
       </p>
     </div>
   </Container>
 </Layout>
-
