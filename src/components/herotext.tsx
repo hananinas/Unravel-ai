@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const Hero: React.FC = () => {
   const variants = {
@@ -9,6 +10,11 @@ const Hero: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Unleashing the Potential of AI with Unravel AI</title>
+        <meta name="description" content="Discover the power of AI and its capabilities to revolutionize the way you do business." />
+      </Helmet>
+      
       <motion.h1
         initial="hidden"
         animate="visible"
@@ -17,6 +23,7 @@ const Hero: React.FC = () => {
       >
         Unleashing the Potential of AI with Unravel AI.
       </motion.h1>
+      
       <motion.p
         initial="hidden"
         animate="visible"
